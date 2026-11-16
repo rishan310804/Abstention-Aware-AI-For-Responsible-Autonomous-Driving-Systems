@@ -1,0 +1,2356 @@
+{
+  "summary": {
+    "sequence": "physical_debris_001_segformer_b0",
+    "scenario_sequence": "physical_debris_001",
+    "policy_mode": "full",
+    "baseline": "nominal",
+    "frames_executed": 100,
+    "state_counts": {
+      "Normal": 100
+    },
+    "action_counts": {
+      "nominal_drive": 100
+    },
+    "effective_action_counts": {
+      "nominal_drive": 100
+    },
+    "state_transitions": 0,
+    "collision_count": 82,
+    "collision_frames": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99
+    ],
+    "stop_requested": false,
+    "stop_time_seconds": null,
+    "stopping_time_seconds": null,
+    "stopping_distance_m": null,
+    "maximum_actual_throttle": 0.8500000238418579,
+    "maximum_actual_brake": 0.0,
+    "maximum_absolute_actual_steer": 0.36524245142936707,
+    "minimum_speed_mps": 0.0059108913460269455,
+    "physical_control_executed": true,
+    "fallback_latched": false,
+    "control_scope": "replayed saved action plan in synchronized CARLA",
+    "live_neural_inference": false
+  },
+  "records": [
+    {
+      "index": 0,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.9800000786781311,
+      "actual_throttle": 0.0,
+      "actual_brake": 0.0,
+      "actual_steer": 0.0,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 1,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 1.9600002765655518,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.04553607106208801,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 2,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 2.940000295639038,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.03253621980547905,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 3,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.7380940914169083,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.03253621980547905,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 4,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.15056057274350318,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.03253621980547905,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 5,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.4636859942039907,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.03253621980547905,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 6,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 1.864617757140528,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.03237365186214447,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 7,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 2.720224454430684,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.029712621122598648,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 8,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 3.419548259354888,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.026113826781511307,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 9,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 4.028648889686141,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.02242778055369854,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 10,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 4.591350272863674,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.005830473266541958,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 11,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 5.135654634674228,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.0027897756081074476,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 12,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 5.405916259325664,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.002544252434745431,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 13,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 5.666789693655959,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.0019124732352793217,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 14,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 6.0873263978292185,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.0013766485499218106,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 15,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 6.652107271755648,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.0009950052481144667,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 16,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 7.150901556571274,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.0006012359517626464,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 17,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 7.689433522255867,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.0007618034142069519,
+      "actual_hand_brake": false,
+      "collision_events": [],
+      "state_transition": false
+    },
+    {
+      "index": 18,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 2.137718894523749,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": 0.0007618034142069519,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -1805.7462158203125,
+            "y": -511.8362731933594,
+            "z": -5707.890625
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 19,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.950237736299161,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.07707047462463379,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -236.26858520507812,
+            "y": -84.05166625976562,
+            "z": -833.34375
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 20,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.28123947064636523,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.12585358321666718,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -135.45248413085938,
+            "y": -52.72501754760742,
+            "z": -457.4389343261719
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 21,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.04204227314757421,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.11805462837219238,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -84.89432525634766,
+            "y": -33.20692825317383,
+            "z": -279.2728576660156
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 22,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.03902226708259886,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.12211672961711884,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -85.0899658203125,
+            "y": -33.28345489501953,
+            "z": -279.9164733886719
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 23,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.03633115630758489,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.12276975810527802,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -66.34347534179688,
+            "y": -27.526901245117188,
+            "z": -217.54605102539062
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 24,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.027652384503297208,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.12418647855520248,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -63.72400665283203,
+            "y": -26.440046310424805,
+            "z": -208.95660400390625
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 25,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.03137126383424107,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.1262238323688507,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -36.89447784423828,
+            "y": -15.308072090148926,
+            "z": -120.980224609375
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 26,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.02230686148922729,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.1291867345571518,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -68.0571060180664,
+            "y": -30.121721267700195,
+            "z": -223.227294921875
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 27,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.02276716852441022,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.13318385183811188,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -103.9906234741211,
+            "y": -46.02571105957031,
+            "z": -341.0892639160156
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 28,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.021921037813732884,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.13608360290527344,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -108.52801513671875,
+            "y": -50.08750534057617,
+            "z": -357.14495849609375
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 29,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.01581940666221518,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.13876943290233612,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -113.79560089111328,
+            "y": -52.51858901977539,
+            "z": -374.4796142578125
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 30,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.02812975162571361,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.14235267043113708,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -107.13187408447266,
+            "y": -49.44316482543945,
+            "z": -352.550537109375
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 31,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.03705774920528631,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.14578698575496674,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -105.643798828125,
+            "y": -48.75638961791992,
+            "z": -347.6535339355469
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 32,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.008206542444805365,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.15057644248008728,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -113.57913208007812,
+            "y": -53.82563781738281,
+            "z": -375.4407653808594
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 33,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.01915298570753749,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.15307246148586273,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -103.05916595458984,
+            "y": -48.840179443359375,
+            "z": -340.66656494140625
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 34,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.027425816434426927,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.1555103361606598,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -67.96522521972656,
+            "y": -32.20901107788086,
+            "z": -224.66200256347656
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 35,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.018905721588648953,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.15948675572872162,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -104.40223693847656,
+            "y": -50.789520263671875,
+            "z": -346.80572509765625
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 36,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.022822296573040954,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.16339349746704102,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -100.79032897949219,
+            "y": -49.032405853271484,
+            "z": -334.8076477050781
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 37,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.0196258751873216,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.1669256091117859,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -72.15375518798828,
+            "y": -35.1013069152832,
+            "z": -239.68202209472656
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 38,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.012392265590812638,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.17095105350017548,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -106.54624938964844,
+            "y": -51.832542419433594,
+            "z": -353.92779541015625
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 39,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.01526022611608318,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.17423857748508453,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -62.87168884277344,
+            "y": -31.35818099975586,
+            "z": -209.8845977783203
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 40,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.02804922221046361,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.1760796308517456,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -110.32747650146484,
+            "y": -55.0274543762207,
+            "z": -368.3062744140625
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 41,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.007411108441944306,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.17996303737163544,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -77.05181884765625,
+            "y": -38.43073272705078,
+            "z": -257.2221374511719
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 42,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.01594728093420841,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.182750403881073,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -98.51168823242188,
+            "y": -49.1341552734375,
+            "z": -328.86163330078125
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 43,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.02953203965934281,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.18634450435638428,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -72.88500213623047,
+            "y": -37.29594802856445,
+            "z": -244.5311279296875
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 44,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.015413117766897955,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.18987523019313812,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -100.06473541259766,
+            "y": -51.20407485961914,
+            "z": -335.7198486328125
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 45,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.01606653948359482,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.1933208405971527,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -108.34571838378906,
+            "y": -55.44153594970703,
+            "z": -363.5028076171875
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 46,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.017259024708473673,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.1966496855020523,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -68.46511840820312,
+            "y": -35.871315002441406,
+            "z": -230.8169708251953
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 47,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.025837224624186503,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.20148742198944092,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -101.81685638427734,
+            "y": -53.34547424316406,
+            "z": -343.25592041015625
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 48,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.02519084292055838,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.20432358980178833,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -111.24654388427734,
+            "y": -58.2860221862793,
+            "z": -375.04632568359375
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 49,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.011578580989270183,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.20901145040988922,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -120.27033233642578,
+            "y": -64.50647735595703,
+            "z": -407.63470458984375
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 50,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.01530098926805598,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.21141783893108368,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -68.72920989990234,
+            "y": -36.86261749267578,
+            "z": -232.9453125
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 51,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.02044251501322232,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.21592262387275696,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -76.11212921142578,
+            "y": -40.82241439819336,
+            "z": -257.9684143066406
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 52,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.016436943733744505,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.2179955542087555,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -110.65563201904297,
+            "y": -60.801918029785156,
+            "z": -377.0513916015625
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 53,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.020177444090199923,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.22132614254951477,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -83.80748748779297,
+            "y": -46.04967498779297,
+            "z": -285.5682067871094
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 54,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.03317394971692045,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.2259853631258011,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -106.96298217773438,
+            "y": -58.77292251586914,
+            "z": -364.4689636230469
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 55,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.01979619114154782,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.2287856787443161,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -115.45157623291016,
+            "y": -63.4371452331543,
+            "z": -393.3932800292969
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 56,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.013930459741671196,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.23336078226566315,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -114.07280731201172,
+            "y": -64.1191177368164,
+            "z": -390.79608154296875
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 57,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.01778082344033845,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.23676620423793793,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -85.96241760253906,
+            "y": -48.31856155395508,
+            "z": -294.4941711425781
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 58,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.0059108913460269455,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.24048475921154022,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -65.62580108642578,
+            "y": -36.887569427490234,
+            "z": -224.8240203857422
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 59,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.022721039902160536,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.24383467435836792,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -104.61363983154297,
+            "y": -60.13693618774414,
+            "z": -360.3927001953125
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 60,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.010391935275756246,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.24612070620059967,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -113.90068817138672,
+            "y": -65.47557830810547,
+            "z": -392.386474609375
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 61,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.021742511050792095,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.25012025237083435,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -105.76846313476562,
+            "y": -60.800785064697266,
+            "z": -364.37103271484375
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 62,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.026953597905923474,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.2536536157131195,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -98.89161682128906,
+            "y": -58.1513557434082,
+            "z": -342.552734375
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 63,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.026299358770876673,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.25702187418937683,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -102.41289520263672,
+            "y": -60.22197723388672,
+            "z": -354.7501525878906
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 64,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.014069949906419523,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.2607994079589844,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -89.10297393798828,
+            "y": -52.39533233642578,
+            "z": -308.6456298828125
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 65,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.01998732578465236,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.26310425996780396,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -103.57176208496094,
+            "y": -60.90342712402344,
+            "z": -358.7643737792969
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 66,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.0064002572986443605,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.26589804887771606,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -89.1039047241211,
+            "y": -53.57973098754883,
+            "z": -310.4065856933594
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 67,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.01625327762668976,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.2692418694496155,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -75.18363952636719,
+            "y": -45.209232330322266,
+            "z": -261.9132995605469
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 68,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.01621472043992682,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.2716890573501587,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -84.39848327636719,
+            "y": -50.75027847290039,
+            "z": -294.0145568847656
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 69,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.010163789348145574,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.274996280670166,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -86.43828582763672,
+            "y": -51.97685241699219,
+            "z": -301.1205139160156
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 70,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.014964219777184755,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.27847257256507874,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -72.01609802246094,
+            "y": -44.24909210205078,
+            "z": -252.3360137939453
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 71,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.014926678192910768,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.2821179926395416,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -101.03382873535156,
+            "y": -62.07855224609375,
+            "z": -354.0107727050781
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 72,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.009193273239967624,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.28492599725723267,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -86.17920684814453,
+            "y": -52.95138168334961,
+            "z": -301.9619140625
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 73,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.02043499741532429,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.2888892590999603,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -76.36865997314453,
+            "y": -47.92900848388672,
+            "z": -269.1629333496094
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 74,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.00777244859553737,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.2915821075439453,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -111.5859375,
+            "y": -70.03137969970703,
+            "z": -393.2868957519531
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 75,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.017044376132803768,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.294125497341156,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -76.88031005859375,
+            "y": -48.2501220703125,
+            "z": -270.96624755859375
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 76,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.016960837799690928,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.2979009747505188,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -96.19021606445312,
+            "y": -60.369022369384766,
+            "z": -339.02435302734375
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 77,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.01731878418027304,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.3018393814563751,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -75.329345703125,
+            "y": -48.24546813964844,
+            "z": -267.11492919921875
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 78,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.015166005410939145,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.3038071393966675,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -104.77584075927734,
+            "y": -67.10478210449219,
+            "z": -371.531005859375
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 79,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.025774728742543697,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.3078109920024872,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -72.08246612548828,
+            "y": -46.16596603393555,
+            "z": -255.60159301757812
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 80,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.03153322513871454,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.31144383549690247,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -100.86725616455078,
+            "y": -66.0635986328125,
+            "z": -359.9216613769531
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 81,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.019176215309961536,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.3151939809322357,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -89.65109252929688,
+            "y": -58.71751022338867,
+            "z": -319.8993835449219
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 82,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.0243469701462155,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.3173231780529022,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -106.8024673461914,
+            "y": -69.9509048461914,
+            "z": -381.10015869140625
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 83,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.011754232040489773,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.32095444202423096,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -97.0595474243164,
+            "y": -63.569725036621094,
+            "z": -346.3348083496094
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 84,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.026551063583484507,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.3240540325641632,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -84.51182556152344,
+            "y": -56.50096130371094,
+            "z": -303.5534362792969
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 85,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.021513100903636347,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.32752275466918945,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -107.29373931884766,
+            "y": -71.73197174072266,
+            "z": -385.382568359375
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 86,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.02062920471388567,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.3309047222137451,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -103.26326751708984,
+            "y": -69.03736877441406,
+            "z": -370.9057312011719
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 87,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.017882631414446386,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.33438751101493835,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -102.48435974121094,
+            "y": -68.51663208007812,
+            "z": -368.1080017089844
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 88,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.02044231037301338,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.3372691869735718,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -109.666259765625,
+            "y": -74.8260726928711,
+            "z": -396.3953552246094
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 89,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.013620816552342698,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.3390701711177826,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -111.73617553710938,
+            "y": -76.23839569091797,
+            "z": -403.8772277832031
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 90,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.020408205039581864,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.3424394726753235,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -107.19068908691406,
+            "y": -73.13697814941406,
+            "z": -387.447265625
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 91,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.013676610917959402,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.34566494822502136,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -68.08004760742188,
+            "y": -46.451507568359375,
+            "z": -246.0794677734375
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 92,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.023020457071165335,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.34856948256492615,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -107.5130844116211,
+            "y": -74.8863296508789,
+            "z": -391.0776062011719
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 93,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.01310384686752709,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.3514164090156555,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -107.23770141601562,
+            "y": -74.69450378417969,
+            "z": -390.0758972167969
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 94,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.012362521576531806,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.35462841391563416,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -79.48419189453125,
+            "y": -55.36330032348633,
+            "z": -289.1228332519531
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 95,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.012072106309361579,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.3562029302120209,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -78.21083068847656,
+            "y": -54.47636032104492,
+            "z": -284.4909973144531
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 96,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.012103463557403478,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.3585069179534912,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -84.87867736816406,
+            "y": -60.35744857788086,
+            "z": -310.8927307128906
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 97,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.014564777435122852,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.35962098836898804,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -106.29182434082031,
+            "y": -75.58439636230469,
+            "z": -389.3246154785156
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 98,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.007617471834267308,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.3632890582084656,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -103.87327575683594,
+            "y": -73.86456298828125,
+            "z": -380.4659729003906
+          }
+        }
+      ],
+      "state_transition": false
+    },
+    {
+      "index": 99,
+      "state": "Normal",
+      "action": "nominal_drive",
+      "effective_action": "nominal_drive",
+      "control_executed": "traffic_manager",
+      "autopilot_enabled": true,
+      "speed_mps": 0.02656443545600537,
+      "actual_throttle": 0.8500000238418579,
+      "actual_brake": 0.0,
+      "actual_steer": -0.36524245142936707,
+      "actual_hand_brake": false,
+      "collision_events": [
+        {
+          "other_actor": "static.prop.container",
+          "intensity": {
+            "x": -105.36698913574219,
+            "y": -74.92675018310547,
+            "z": -385.9371032714844
+          }
+        }
+      ],
+      "state_transition": false
+    }
+  ]
+}
