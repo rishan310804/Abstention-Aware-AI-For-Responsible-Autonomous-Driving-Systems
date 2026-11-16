@@ -1,0 +1,524 @@
+{
+  "project": "/NAS_DISK/BS2026/rishan/carla-segformer-project",
+  "models": {
+    "segformer_b0": "nvidia/segformer-b0-finetuned-cityscapes-1024-1024",
+    "segformer_b2": "nvidia/segformer-b2-finetuned-cityscapes-1024-1024",
+    "segformer_b5": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+    "mask2former": "facebook/mask2former-swin-small-cityscapes-semantic"
+  },
+  "native_weather_scenarios": {
+    "carla_wet_001": {
+      "exists": true,
+      "rgb_frames": 100,
+      "ground_truth_frames": 100,
+      "model_outputs": {
+        "segformer_b0": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_wet_001_segformer_b0",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "segformer_b2": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_wet_001_segformer_b2",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "segformer_b5": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_wet_001_segformer_b5",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "mask2former": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_wet_001_mask2former",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        }
+      }
+    },
+    "carla_rain_001": {
+      "exists": true,
+      "rgb_frames": 100,
+      "ground_truth_frames": 100,
+      "model_outputs": {
+        "segformer_b0": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_rain_001_segformer_b0",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "segformer_b2": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_rain_001_segformer_b2",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "segformer_b5": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_rain_001_segformer_b5",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "mask2former": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_rain_001_mask2former",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        }
+      }
+    },
+    "carla_fog_001": {
+      "exists": true,
+      "rgb_frames": 100,
+      "ground_truth_frames": 100,
+      "model_outputs": {
+        "segformer_b0": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_fog_001_segformer_b0",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "segformer_b2": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_fog_001_segformer_b2",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "segformer_b5": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_fog_001_segformer_b5",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "mask2former": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_fog_001_mask2former",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        }
+      }
+    },
+    "carla_night_001": {
+      "exists": true,
+      "rgb_frames": 100,
+      "ground_truth_frames": 100,
+      "model_outputs": {
+        "segformer_b0": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_night_001_segformer_b0",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "segformer_b2": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_night_001_segformer_b2",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "segformer_b5": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_night_001_segformer_b5",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "mask2former": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/carla_night_001_mask2former",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        }
+      }
+    }
+  },
+  "stress_scenarios": {
+    "occlusion_001": {
+      "exists": true,
+      "rgb_frames": 100,
+      "ground_truth_frames": 100,
+      "model_outputs": {
+        "segformer_b0": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/occlusion_001_segformer_b0",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "segformer_b2": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/occlusion_001_segformer_b2",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "segformer_b5": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/occlusion_001_segformer_b5",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "mask2former": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/occlusion_001_mask2former",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        }
+      }
+    },
+    "unknown_object_001": {
+      "exists": true,
+      "rgb_frames": 100,
+      "ground_truth_frames": 100,
+      "model_outputs": {
+        "segformer_b0": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/unknown_object_001_segformer_b0",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "segformer_b2": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/unknown_object_001_segformer_b2",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "segformer_b5": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/unknown_object_001_segformer_b5",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        },
+        "mask2former": {
+          "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/unknown_object_001_mask2former",
+          "exists": true,
+          "frames_processed": 100,
+          "logits": 100,
+          "predictions": 200,
+          "uncertainty": 200,
+          "temporal_summary": true,
+          "ground_truth_evaluation": true
+        }
+      }
+    }
+  },
+  "evaluation_splits": {
+    "eval_normal_001": {
+      "rgb_frames": 100,
+      "ground_truth_frames": 100,
+      "metadata": true
+    },
+    "eval_val_001": {
+      "rgb_frames": 100,
+      "ground_truth_frames": 100,
+      "metadata": true
+    },
+    "eval_test_001": {
+      "rgb_frames": 100,
+      "ground_truth_frames": 100,
+      "metadata": true
+    }
+  },
+  "model_outputs": {
+    "eval_normal_001": {
+      "segformer_b0": {
+        "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/eval_normal_001_segformer_b0",
+        "exists": true,
+        "frames_processed": 100,
+        "logits": 100,
+        "predictions": 200,
+        "uncertainty": 200,
+        "temporal_summary": false,
+        "ground_truth_evaluation": true
+      },
+      "segformer_b2": {
+        "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/eval_normal_001_segformer_b2",
+        "exists": true,
+        "frames_processed": 100,
+        "logits": 100,
+        "predictions": 200,
+        "uncertainty": 200,
+        "temporal_summary": false,
+        "ground_truth_evaluation": true
+      },
+      "segformer_b5": {
+        "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/eval_normal_001_segformer_b5",
+        "exists": true,
+        "frames_processed": 100,
+        "logits": 100,
+        "predictions": 200,
+        "uncertainty": 200,
+        "temporal_summary": false,
+        "ground_truth_evaluation": true
+      },
+      "mask2former": {
+        "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/eval_normal_001_mask2former",
+        "exists": true,
+        "frames_processed": 100,
+        "logits": 100,
+        "predictions": 200,
+        "uncertainty": 200,
+        "temporal_summary": false,
+        "ground_truth_evaluation": true
+      }
+    },
+    "eval_val_001": {
+      "segformer_b0": {
+        "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/eval_val_001_segformer_b0",
+        "exists": true,
+        "frames_processed": 100,
+        "logits": 100,
+        "predictions": 200,
+        "uncertainty": 200,
+        "temporal_summary": true,
+        "ground_truth_evaluation": true
+      },
+      "segformer_b2": {
+        "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/eval_val_001_segformer_b2",
+        "exists": true,
+        "frames_processed": 100,
+        "logits": 100,
+        "predictions": 200,
+        "uncertainty": 200,
+        "temporal_summary": true,
+        "ground_truth_evaluation": true
+      },
+      "segformer_b5": {
+        "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/eval_val_001_segformer_b5",
+        "exists": true,
+        "frames_processed": 100,
+        "logits": 100,
+        "predictions": 200,
+        "uncertainty": 200,
+        "temporal_summary": true,
+        "ground_truth_evaluation": true
+      },
+      "mask2former": {
+        "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/eval_val_001_mask2former",
+        "exists": true,
+        "frames_processed": 100,
+        "logits": 100,
+        "predictions": 200,
+        "uncertainty": 200,
+        "temporal_summary": true,
+        "ground_truth_evaluation": true
+      }
+    },
+    "eval_test_001": {
+      "segformer_b0": {
+        "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/eval_test_001_segformer_b0",
+        "exists": true,
+        "frames_processed": 100,
+        "logits": 100,
+        "predictions": 200,
+        "uncertainty": 200,
+        "temporal_summary": true,
+        "ground_truth_evaluation": true
+      },
+      "segformer_b2": {
+        "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/eval_test_001_segformer_b2",
+        "exists": true,
+        "frames_processed": 100,
+        "logits": 100,
+        "predictions": 200,
+        "uncertainty": 200,
+        "temporal_summary": true,
+        "ground_truth_evaluation": true
+      },
+      "segformer_b5": {
+        "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/eval_test_001_segformer_b5",
+        "exists": true,
+        "frames_processed": 100,
+        "logits": 100,
+        "predictions": 200,
+        "uncertainty": 200,
+        "temporal_summary": true,
+        "ground_truth_evaluation": true
+      },
+      "mask2former": {
+        "path": "/NAS_DISK/BS2026/rishan/carla-segformer-project/outputs/sequences/eval_test_001_mask2former",
+        "exists": true,
+        "frames_processed": 100,
+        "logits": 100,
+        "predictions": 200,
+        "uncertainty": 200,
+        "temporal_summary": true,
+        "ground_truth_evaluation": true
+      }
+    }
+  },
+  "calibration": {
+    "segformer_b0": {
+      "validation_sequence": "eval_val_001",
+      "model_sequence": "eval_val_001_segformer_b0",
+      "target_error": 0.05,
+      "full_image": {
+        "threshold": 0.76,
+        "coverage": 0.9031239039418524,
+        "selective_risk": 0.048904515320372766,
+        "accepted_pixels": 19765087,
+        "target_error": 0.05
+      },
+      "driving_corridor": {
+        "threshold": 0.5,
+        "coverage": 0.987500021381706,
+        "selective_risk": 0.014343940575215819,
+        "accepted_pixels": 6350347,
+        "target_error": 0.05
+      },
+      "threshold_status": "selected on validation data; do not retune on final test data"
+    },
+    "segformer_b2": {
+      "validation_sequence": "eval_val_001",
+      "model_sequence": "eval_val_001_segformer_b2",
+      "target_error": 0.05,
+      "full_image": {
+        "threshold": 0.75,
+        "coverage": 0.9174545643630933,
+        "selective_risk": 0.049318290605918746,
+        "accepted_pixels": 20078717,
+        "target_error": 0.05
+      },
+      "driving_corridor": {
+        "threshold": 0.5,
+        "coverage": 0.9927373730917993,
+        "selective_risk": 0.02364729973729751,
+        "accepted_pixels": 6384027,
+        "target_error": 0.05
+      },
+      "threshold_status": "selected on validation data; do not retune on final test data"
+    },
+    "segformer_b5": {
+      "validation_sequence": "eval_val_001",
+      "model_sequence": "eval_val_001_segformer_b5",
+      "target_error": 0.05,
+      "full_image": {
+        "threshold": 0.7,
+        "coverage": 0.9688392324983902,
+        "selective_risk": 0.04945154012234798,
+        "accepted_pixels": 21203283,
+        "target_error": 0.05
+      },
+      "driving_corridor": {
+        "threshold": 0.5,
+        "coverage": 0.9974628078829607,
+        "selective_risk": 0.014885691056783834,
+        "accepted_pixels": 6414415,
+        "target_error": 0.05
+      },
+      "threshold_status": "selected on validation data; do not retune on final test data"
+    },
+    "mask2former": {
+      "validation_sequence": "eval_val_001",
+      "model_sequence": "eval_val_001_mask2former",
+      "target_error": 0.05,
+      "full_image": {
+        "threshold": 0.77,
+        "coverage": 0.9172679546090508,
+        "selective_risk": 0.0490473723728847,
+        "accepted_pixels": 20074633,
+        "target_error": 0.05
+      },
+      "driving_corridor": {
+        "threshold": 0.5,
+        "coverage": 0.9950804970694622,
+        "selective_risk": 0.017439341031817768,
+        "accepted_pixels": 6399095,
+        "target_error": 0.05
+      },
+      "threshold_status": "selected on validation data; do not retune on final test data"
+    }
+  },
+  "event_response_count": 17,
+  "policy_summary_count": 164
+}

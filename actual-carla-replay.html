@@ -1,0 +1,46 @@
+<div id="actual-carla-replay" style="font:14px system-ui,sans-serif;color:#202124;max-width:1180px">
+  <style>
+    #actual-carla-replay .top{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:10px 0}
+    #actual-carla-replay button{padding:7px 14px;border:1px solid #aaa;border-radius:5px;background:#f5f5f5;cursor:pointer}
+    #actual-carla-replay input{width:min(620px,100%)}
+    #actual-carla-replay .frames{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    #actual-carla-replay img{width:100%;display:block;border-radius:5px;background:#ddd}
+    #actual-carla-replay figure{margin:0;border:1px solid #ddd;padding:8px;border-radius:6px}
+    #actual-carla-replay figcaption{font-size:12px;color:#666;margin-top:6px}
+    #actual-carla-replay .state{font-size:22px;font-weight:600;margin:10px 0 2px}
+    #actual-carla-replay .normal{color:#078b3e}.caution{color:#a16b00}.abstention{color:#d65b00}
+    #actual-carla-replay .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0}
+    #actual-carla-replay .fact{padding:8px;background:#f4f4f4;border-radius:5px}.label{font-size:11px;color:#666}.value{font-weight:600}
+    #actual-carla-replay .warning{padding:10px;background:#fff2d8;border-left:3px solid #d98c00;margin:10px 0}
+    @media(max-width:720px){#actual-carla-replay .frames{grid-template-columns:1fr}#actual-carla-replay .facts{grid-template-columns:repeat(2,1fr)}}
+  </style>
+  <strong>Actual CARLA camera replay: independent debris hazard</strong>
+  <div style="color:#666;margin-top:4px">Physical RGB frame and the real SegFormer B0 overlay from the same frame</div>
+  <div class="top"><button id="carla-play">Play</button><label>Frame <output id="carla-frame">0</output></label><input id="carla-slider" type="range" min="0" max="99" value="0"></div>
+  <div id="carla-state" class="state normal">Normal — proceed</div>
+  <div class="facts">
+    <div class="fact"><div class="label">Policy action</div><div id="carla-action" class="value">nominal drive</div></div>
+    <div class="fact"><div class="label">Policy vehicle result</div><div id="carla-result" class="value">moving</div></div>
+    <div class="fact"><div class="label">Nominal baseline</div><div id="carla-baseline" class="value">no collision yet</div></div>
+    <div class="fact"><div class="label">Hazard</div><div class="value">independent debris</div></div>
+  </div>
+  <div class="frames">
+    <figure style="grid-column:1 / -1"><img id="carla-replay-gif" src="visualization_assets/physical_replay.gif" alt="Animated sequence of actual CARLA RGB frames and SegFormer B0 overlays"><figcaption>Actual CARLA RGB and SegFormer B0 overlay replay</figcaption></figure>
+  </div>
+  <div class="warning">At frame 18 the nominal controller begins recording collision-frame events. The uncertainty-aware policy has already latched fallback braking and reaches standstill without a collision.</div>
+  <script>
+    (()=>{
+      const root=document.getElementById('actual-carla-replay');
+      const keys=[0,10,13,18,50,81,99];
+      const stateAt=i=>i>=13&&i<=20?'Abstention':i>=11&&i<=12?'Caution':i>=79&&i<=80?'Caution':i>=81&&i<=82?'Abstention':i>=98?'Caution':'Normal';
+      const actionAt=i=>i>=13?'controlled stop':stateAt(i)==='Caution'?'cautious drive':'nominal drive';
+      function update(raw){const i=keys.reduce((a,k)=>Math.abs(k-raw)<Math.abs(a-raw)?k:a,keys[0]); const s=stateAt(i); const stem=String(i).padStart(6,'0');
+        root.querySelector('#carla-frame').textContent=i; root.querySelector('#carla-slider').value=i;
+        const el=root.querySelector('#carla-state'); el.textContent=s+' — '+(s==='Normal'?'proceed':s==='Caution'?'continue with monitoring':'withhold decision'); el.className='state '+s.toLowerCase();
+        root.querySelector('#carla-action').textContent=actionAt(i); root.querySelector('#carla-result').textContent=i>=13?'stopped by fallback':'moving'; root.querySelector('#carla-baseline').textContent=i>=18?'82 collision-frame events':'no collision yet';
+        root.querySelector('#carla-replay-gif').alt='Actual CARLA replay; selected keyframe '+i+' shown in the animation';
+      }
+      let playing=false,timer; root.querySelector('#carla-slider').addEventListener('input',e=>update(+e.target.value)); root.querySelector('#carla-play').addEventListener('click',()=>{playing=!playing;root.querySelector('#carla-play').textContent=playing?'Pause':'Play';if(playing)timer=setInterval(()=>{let n=+root.querySelector('#carla-slider').value+1;if(n>99)n=0;update(n)},380);else clearInterval(timer)}); update(0);
+    })();
+  </script>
+</div>

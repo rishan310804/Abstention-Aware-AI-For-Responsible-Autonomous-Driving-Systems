@@ -1,0 +1,24 @@
+# Large simulator/source distributions
+CarlaUE4/
+Engine/
+PythonAPI/
+HDMaps/
+Co-Simulation/
+CARLA_0.9.16.tar.gz
+
+# Generated data and caches
+outputs/
+hf-cache/
+pip-cache/
+__pycache__/
+*.pyc
+.codex/
+.agents/
+.aws/
+
+# Local runtime files
+*.log
+*.core
+core.*
+
+# Keep the small visual assets and reports in the repository.

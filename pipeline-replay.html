@@ -1,0 +1,105 @@
+<div id="pipeline-replay" class="pipeline-replay" role="application" aria-label="Uncertainty-aware CARLA policy replay">
+  <style>
+    #pipeline-replay { color: var(--foreground, #e8e8e8); font: 14px/1.4 system-ui, sans-serif; display: grid; gap: 14px; }
+    #pipeline-replay h1 { font-size: 20px; margin: 0; font-weight: 500; }
+    #pipeline-replay .muted { color: var(--muted-foreground, #9aa0aa); }
+    #pipeline-replay .toolbar { display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+    #pipeline-replay button { padding:7px 12px; border:1px solid var(--border,#555); border-radius:6px; background:var(--card,#222); color:var(--foreground,#eee); cursor:pointer; }
+    #pipeline-replay input[type=range] { width:min(560px,100%); accent-color:var(--primary,#6aa9ff); }
+    #pipeline-replay .grid { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(260px,.8fr); gap:14px; }
+    #pipeline-replay .panel { border:1px solid var(--border,#444); border-radius:8px; padding:12px; background:color-mix(in srgb,var(--card,#222) 75%,transparent); }
+    #pipeline-replay .road { height:210px; position:relative; overflow:hidden; background:var(--muted,#30343b); border-radius:6px; }
+    #pipeline-replay .lane { position:absolute; inset:0 38%; border-left:2px dashed #aeb4bc; border-right:2px dashed #aeb4bc; }
+    #pipeline-replay .car, #pipeline-replay .obstacle { position:absolute; left:50%; transform:translateX(-50%); border-radius:5px; text-align:center; }
+    #pipeline-replay .car { width:44px; height:62px; bottom:18px; background:var(--blue,#5b9cff); color:#fff; padding-top:7px; box-sizing:border-box; }
+    #pipeline-replay .obstacle { width:58px; height:38px; top:38px; background:var(--red,#df6b72); color:#fff; padding-top:8px; box-sizing:border-box; }
+    #pipeline-replay .metric { display:flex; justify-content:space-between; gap:12px; padding:4px 0; border-bottom:1px solid color-mix(in srgb,var(--border,#444) 55%,transparent); }
+    #pipeline-replay .metric:last-child { border-bottom:0; }
+    #pipeline-replay .value { font-variant-numeric:tabular-nums; font-weight:500; }
+    #pipeline-replay .state { font-size:22px; font-weight:500; }
+    #pipeline-replay .state.normal { color:var(--green,#69c58a); }
+    #pipeline-replay .state.caution { color:var(--yellow,#e6c765); }
+    #pipeline-replay .state.abstention { color:var(--orange,#e99a5c); }
+    #pipeline-replay .bar { height:18px; display:flex; overflow:hidden; border-radius:4px; background:var(--muted,#30343b); }
+    #pipeline-replay .seg { height:100%; min-width:1px; }
+    #pipeline-replay .normal { background:var(--green,#69c58a); }
+    #pipeline-replay .caution { background:var(--yellow,#e6c765); }
+    #pipeline-replay .abstention { background:var(--orange,#e99a5c); }
+    #pipeline-replay .legend { display:flex; flex-wrap:wrap; gap:12px; margin-top:7px; }
+    #pipeline-replay .legend span::before { content:""; display:inline-block; width:10px; height:10px; margin-right:5px; border-radius:2px; background:currentColor; }
+    #pipeline-replay .legend .normal { color:var(--green,#69c58a); background:none; }
+    #pipeline-replay .legend .caution { color:var(--yellow,#e6c765); background:none; }
+    #pipeline-replay .legend .abstention { color:var(--orange,#e99a5c); background:none; }
+    #pipeline-replay .chart { width:100%; height:130px; display:block; }
+    #pipeline-replay .callout { padding:9px 11px; border-left:3px solid var(--primary,#6aa9ff); background:color-mix(in srgb,var(--primary,#6aa9ff) 12%,transparent); }
+    @media (max-width:700px) { #pipeline-replay .grid { grid-template-columns:1fr; } }
+  </style>
+  <h1>Independent debris: perception → uncertainty → action</h1>
+  <div class="muted">SegFormer B0 · physical CARLA replay · 100 frames at 10 Hz</div>
+  <div class="toolbar">
+    <button id="play" type="button">Play</button>
+    <label for="frame">Frame <output id="frame-label">0</output></label>
+    <input id="frame" type="range" min="0" max="99" value="0" aria-label="Replay frame">
+  </div>
+  <div class="grid">
+    <div class="panel">
+      <div class="road" aria-label="Schematic of ego vehicle approaching an independent debris obstacle">
+        <div class="lane"></div><div class="obstacle">debris</div><div id="car" class="car">ego</div>
+      </div>
+      <div style="height:12px"></div>
+      <svg id="chart" class="chart" viewBox="0 0 700 130" role="img" aria-label="Confidence, instability, and policy state over the replay"></svg>
+      <div class="bar" id="timeline" aria-label="Policy state timeline"></div>
+      <div class="legend"><span class="normal">Normal</span><span class="caution">Caution</span><span class="abstention">Abstention</span></div>
+    </div>
+    <div class="panel" aria-live="polite">
+      <div id="state" class="state normal">Normal</div>
+      <div id="action" class="muted">proceed</div>
+      <div style="height:8px"></div>
+      <div class="metric"><span>Confidence</span><span id="confidence" class="value">0.957</span></div>
+      <div class="metric"><span>Low-confidence fraction</span><span id="low" class="value">0.037</span></div>
+      <div class="metric"><span>Instability</span><span id="instability" class="value">0.000</span></div>
+      <div class="metric"><span>Physical action</span><span id="physical" class="value">nominal drive</span></div>
+      <div class="metric"><span>Collision result</span><span id="collision" class="value">0</span></div>
+      <div class="metric"><span>Vehicle speed</span><span id="speed" class="value">moving</span></div>
+    </div>
+  </div>
+  <div class="callout" id="message">The policy is currently trusting the nominal controller.</div>
+  <script>
+    (() => {
+      const root = document.getElementById('pipeline-replay');
+      const frame = root.querySelector('#frame');
+      const events = [
+        [0,10,'Normal','proceed',.957,.037,0], [11,12,'Caution','continue_with_monitoring',.939,.035,.099],
+        [13,20,'Abstention','withhold_decision',.943,.023,.101], [21,21,'Caution','continue_with_monitoring',.968,.015,.026],
+        [22,45,'Normal','proceed',.966,.017,.020], [46,46,'Caution','continue_with_monitoring',.953,.025,.062],
+        [47,57,'Normal','proceed',.954,.020,.030], [58,58,'Caution','continue_with_monitoring',.951,.018,.052],
+        [59,60,'Normal','proceed',.949,.020,.035], [61,61,'Caution','continue_with_monitoring',.949,.025,.095],
+        [62,67,'Normal','proceed',.957,.020,.029], [68,68,'Caution','continue_with_monitoring',.945,.021,.074],
+        [69,71,'Normal','proceed',.953,.021,.042], [72,73,'Caution','continue_with_monitoring',.945,.022,.074],
+        [74,75,'Normal','proceed',.951,.017,.038], [76,76,'Caution','continue_with_monitoring',.953,.016,.077],
+        [77,78,'Normal','proceed',.953,.014,.017], [79,80,'Caution','continue_with_monitoring',.874,.050,.065],
+        [81,82,'Abstention','withhold_decision',.922,.019,.249], [83,83,'Caution','continue_with_monitoring',.959,.021,.046],
+        [84,97,'Normal','proceed',.963,.015,.022], [98,98,'Caution','continue_with_monitoring',.968,.013,.079], [99,99,'Normal','proceed',.964,.010,.027]
+      ];
+      const color = {Normal:'var(--green,#69c58a)', Caution:'var(--yellow,#e6c765)', Abstention:'var(--orange,#e99a5c)'};
+      const timeline = root.querySelector('#timeline');
+      events.forEach(e => { const el=document.createElement('div'); el.className='seg '+e[2].toLowerCase(); el.style.width=((e[1]-e[0]+1))+'%'; el.dataset.tip=e[2]+' frames '+e[0]+'–'+e[1]; timeline.appendChild(el); });
+      const chart = root.querySelector('#chart');
+      const ns='http://www.w3.org/2000/svg';
+      function line(values, stroke, y0, scale) { const p=document.createElementNS(ns,'path'); p.setAttribute('fill','none'); p.setAttribute('stroke',stroke); p.setAttribute('stroke-width','2'); p.setAttribute('d',values.map((v,i)=>(i?'L':'M')+(i*7)+','+(y0-v*scale)).join(' ')); chart.appendChild(p); }
+      const conf=[], instability=[]; for(let i=0;i<100;i++){let e=events.find(x=>i>=x[0]&&i<=x[1]); conf.push(e[4]); instability.push(e[6]);}
+      line(conf, 'var(--blue,#6aa9ff)', 118, 90); line(instability, 'var(--orange,#e99a5c)', 118, 300);
+      const obstacle=root.querySelector('#obstacle');
+      function update(i){
+        const e=events.find(x=>i>=x[0]&&i<=x[1])||events[events.length-1];
+        const state=e[2], abst=i>=13; root.querySelector('#frame-label').textContent=i;
+        const stateEl=root.querySelector('#state'); stateEl.textContent=state; stateEl.className='state '+state.toLowerCase();
+        root.querySelector('#action').textContent=e[3]; root.querySelector('#confidence').textContent=e[4].toFixed(3); root.querySelector('#low').textContent=e[5].toFixed(3); root.querySelector('#instability').textContent=e[6].toFixed(3);
+        root.querySelector('#physical').textContent=abst?'controlled stop':'nominal / cautious drive'; root.querySelector('#collision').textContent=i>=18&& !abst?'82 collision-frame events':'0'; root.querySelector('#speed').textContent=abst?'stopped by fallback':'nominal motion';
+        root.querySelector('#message').textContent=abst?'Abstention latches the fallback: braking continues until standstill, even if later evidence recovers.':'The policy is currently trusting the nominal controller.';
+        const car=root.querySelector('#car'); car.style.bottom=abst?'18px':(18+Math.min(95,i*0.45))+'px';
+      }
+      let playing=false, timer; root.querySelector('#play').addEventListener('click',()=>{playing=!playing; root.querySelector('#play').textContent=playing?'Pause':'Play'; if(playing){timer=setInterval(()=>{let n=+frame.value+1;if(n>99){n=0}frame.value=n;update(n)},120)}else clearInterval(timer)}); frame.addEventListener('input',()=>update(+frame.value)); update(0);
+    })();
+  </script>
+</div>
